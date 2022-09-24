@@ -1,0 +1,143 @@
+{% extends 'base2.html' %}
+
+{%block tituloCuadro%}
+                  <a><h4>Inventario</h4></a>
+{%endblock%}
+
+{%block logo%}
+<a href="#" class="logo">
+    Inventario
+</a>
+{%endblock%}
+
+{%block menu%}
+<ul class="nav">
+    <li ><a href="{% url 'negocio:pedidos'%}" >Inicio</a></li>
+    <li><a href="{% url 'negocio:clientes'%}" >Clientes</a></li>
+  <li ><a href="#">Proveedores</a></li>
+  <li><a href="{% url 'negocio:inventario'%}" class="active">Inventario</a></li>
+  <li class="scroll-to-section"><a href="#">Listado Pedidos</a></li>
+</ul>        
+<a class='menu-trigger'>
+  <span>Menu</span>
+</a>
+{%endblock%}
+
+
+{%block bloqueGrande%}
+
+<section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <table class="table table-hover">
+                      
+                   <tr>
+                      <th scope="col">Inventario</th>
+                      <th scope="col">
+                        <select id="seleccion" class="estilo" onchange="seleccion()">
+
+                        <option>----------</option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+        
+                    </select></th>
+                    <th><div class="main-button-yellow row">
+                      <div><a href="#">Filtrar</a></div>
+                  </div></th>
+                  <th> <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar" name="srch-term" id="srch-term">
+                        
+                    </div>
+                    <th><div class="input-group-btn">
+                      <button class="btn btn-default" ><i class="glyphicon glyphicon-search"></i>Buscar</button>
+                  </div></th>
+                    </form> </tr>
+                  </table>
+                  </div>
+               
+                  
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Id Articulo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Existencia</th>
+                        <th scope="col">Fabrica</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mueble Madera</td>
+                        <td>15</td>
+                        <td>MaderasInc</td>
+                        <td><a href="{% url 'negocio:detalleArt'%}">Detalles</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Silla Gamer</td>
+                        <td>25</td>
+                        <td>SillasGamingInc</td>
+                        <td><a href="{% url 'negocio:detalleArt'%}">Detalles</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Estanterias</td>
+                        <td>8</td>
+                        <td>MueblesInc</td>
+                        <td><a href="#">Detalles</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3">
+          <div class="right-info">
+              <ul>
+                  <li>
+                    
+                    <span>Acciones</span>
+                    <h6>-----------------------</h6>
+                    
+                  </li>
+                  <li><div class="main-button-yellow row">
+                    <div><a href="#">Agregar Producto</a></div>
+
+                </div></li>
+                  <li><div class="main-button-yellow row">
+                    <div><a href="#">Editar Producto</a></div>
+
+                </div></li>
+                  
+              </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+
+    <div class="footer">
+        <p>Footer
+            <br>Problemas: <a href="https://templatemo.com" target="_parent" title="free css templates">Contacto</a></p>
+      </div>
+  </section>
+
+
+
+{%endblock%}

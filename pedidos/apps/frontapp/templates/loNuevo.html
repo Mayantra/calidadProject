@@ -1,0 +1,313 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block titulo%}<title>Nuevos</title>{%endblock%}
+
+
+
+    
+{%block logo%}
+                  <a href="" class="logo">
+                      Lo nuevo
+                  </a>
+{%endblock%}
+{%block menu%}
+<ul class="nav">
+  <li ><a href="{% url 'front:index'%}" >Inicio</a></li>
+  <li><a href="{% url 'front:loNuevo'%}" class="active">Lo Nuevo</a></li>
+  <li class="scroll-to-section"><a href="">Como Hacer Pedidos</a></li>
+  <li class="has-sub">
+      <a href="javascript:void(0)">Productos</a>
+      <ul class="sub-menu">
+          <li><a href="{% url 'front:proOficina'%}">Oficina</a></li>
+          <li><a href="#">Habitaciones</a></li>
+          <li><a href="#">Cocina</a></li>
+      </ul>
+  </li>
+  <li class=""><a href="#">Ofertas</a></li> 
+  <li class=""><a href="{% url 'front:login'%}">LOGIN</a></li> 
+  <li><a href="{% url 'front:carrito'%}"><img src="{% static 'assets/images/carritoimg.png'%}" alt="Carrito"></a></li>
+</ul>        
+<a class='menu-trigger'>
+  <span>Menu</span>
+</a>
+{%endblock%}
+{%block encabezadoBanner%}
+{%endblock%}
+
+{%block VideoPrincipal%}
+
+                
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Nuevos Materiales de Oficina</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            <div class="item">
+              <img src="https://cemacogt.vteximg.com.br/arquivos/ids/453834-1100-1100/1039951_1.jpg?v=637945730922570000" alt="Course One">
+              <div class="down-content">
+                <h4>Escritorios de aluminio y Madera</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$160</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="https://cemacogt.vteximg.com.br/arquivos/ids/316774-250-250/984016_1.jpg?v=637951010966100000" alt="Course Two">
+              <div class="down-content">
+                <h4>Sillas de rotativas y estaticas de distintos colores</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$180</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="https://d1cft8rz0k7w99.cloudfront.net/n/4/c/4/a/4c4a9a398860c68f0b61d61a9327d0b9ea0a2b56_ShelvingUnits_441194_01.png" alt="">
+              <div class="down-content">
+                <h4>Estanterias de varios niveles y tamanos</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$140</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="https://www.induya.com.co/wp-content/uploads/2018/09/untitled.18.png" alt="">
+              <div class="down-content">
+                <h4>Archivadores para ofician de distintos nivels</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$120</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/41TxwLbNTSL.jpg" alt="">
+              <div class="down-content">
+                <h4>Mostradores con nuevos disenos y tamanos</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$250</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+           
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading">
+              <h2>Nuevos Materiales de Oficina</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="owl-courses-item owl-carousel">
+              <div class="item">
+                <img src="https://cemacogt.vteximg.com.br/arquivos/ids/453834-1100-1100/1039951_1.jpg?v=637945730922570000" alt="Course One">
+                <div class="down-content">
+                  <h4>Escritorios de aluminio y Madera</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$160</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://cemacogt.vteximg.com.br/arquivos/ids/316774-250-250/984016_1.jpg?v=637951010966100000" alt="Course Two">
+                <div class="down-content">
+                  <h4>Sillas de rotativas y estaticas de distintos colores</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$180</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://d1cft8rz0k7w99.cloudfront.net/n/4/c/4/a/4c4a9a398860c68f0b61d61a9327d0b9ea0a2b56_ShelvingUnits_441194_01.png" alt="">
+                <div class="down-content">
+                  <h4>Estanterias de varios niveles y tamanos</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$140</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://www.induya.com.co/wp-content/uploads/2018/09/untitled.18.png" alt="">
+                <div class="down-content">
+                  <h4>Archivadores para ofician de distintos nivels</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$120</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41TxwLbNTSL.jpg" alt="">
+                <div class="down-content">
+                  <h4>Mostradores con nuevos disenos y tamanos</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$250</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+             
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+
+  </section>
+
+  
+          
+{%endblock%}
+
+{%block informativas%}
+{%endblock%}
+
+
+{%block bannersM %}
+{%endblock%}
+
+{% block instrucciones%}
+{%endblock%}
+
+{%block ofertas%}
+{%endblock%}
+
+{%block datos%}
+{%endblock%}
+
+{%block contacto%}
+{%endblock%}
